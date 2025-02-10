@@ -1,0 +1,113 @@
+:root {
+    --fuentePrincipal: "Roboto", serif;
+}
+
+body {
+margin: 0;
+height: 100%;
+}
+
+.bannerHeader{
+    background-color: rgb(50, 79, 227);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    gap: 20px;
+    box-shadow: 5px 5px 10px gray;
+    color: white;
+}
+h1 {
+font-family: var(--fuentePrincipal);
+font-size: 18px;
+}
+
+.textoInicio{
+    text-align: center;
+    margin-top: 40px;
+    font-family: var(--fuentePrincipal);
+}
+
+.formTareas__Area{
+    background-color: rgb(245, 245, 245);
+    margin: auto;
+    border: thin solid;
+    border-radius: 10px;
+    max-width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fuentePrincipal);
+}
+
+.btnCrearTarea{
+    background-color: rgb(50, 79, 227);
+    border: none;
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.tituloTarea, .descripcionTarea {
+   width: 40%;
+   margin: auto;
+}
+.descripcionTarea{
+    width: 60%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.textoName {
+    text-align: center;
+}
+
+.textoAlerta {
+    background-color: rgb(235, 52, 52);
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.tareas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedorTareas{
+    background-color: #C5E7E8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tituloTareaMostrar{
+text-align: center;
+}
+.descripcionTareaMostrar{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+.btnEliminarTarea{
+    background-color: rgb(235, 52, 52);
+    border: none;
+    color: white;
+    font-family: var(--fuentePrincipal);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
